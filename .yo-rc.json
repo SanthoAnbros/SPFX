@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": false,
+    "environment": "spo",
+    "version": "1.6.0",
+    "libraryName": "crud",
+    "libraryId": "1673345e-22bc-430e-99a8-b5368220298a",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "web-part-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webPart2/WebPart2WebPart.js",
+          "manifest": "./src/webparts/webPart2/WebPart2WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+      "globalName": "jQuery"
+    }
+  },
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "WebPart2WebPartStrings": "lib/webparts/webPart2/loc/{locale}.js"
+  }
+}
